@@ -1,25 +1,16 @@
 import React from 'react';
-import './App.css'
+import { BrowserRouter } from 'react-router-dom';
 
-// import logo from './assets'
+import Routes from './routes';
+
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div className="container">
-      <img src={logo} alt=""/>
-
-      <div className="content">
-        <p>
-          Ofereça <strong>spots</strong> para programadores e encontre talentos para sua empresa
-        </p>
-
-        <form>
-          <label htmlFor="email"></label>
-          <input type="email" name="email" id="email" placeholder="Seu melhor email"/>
-
-        </form>
-      </div>
-    </div>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Routes />
+    </BrowserRouter>
   );
 }
 

@@ -3,10 +3,10 @@ import { Router } from 'express';
 import multer from 'multer';
 import multerConfig from './config/multer';
 
-import SessionController from './controllers/SessionController';
-import SpotController from './controllers/SpotController';
-import DashboardController from './controllers/DashboardController';
-import BookingController from './controllers/BookingController';
+import SessionController from './app/controllers/SessionController';
+import SpotController from './app/controllers/SpotController';
+import DashboardController from './app/controllers/DashboardController';
+import BookingController from './app/controllers/BookingController';
 
 const routes = Router();
 
